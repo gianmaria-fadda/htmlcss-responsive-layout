@@ -43,6 +43,14 @@ img {
     width: 100%;
 }
 
+.background-section-purple {
+    background-color: #9792E4;
+}
+
+section {
+    padding: 30px 0;
+}
+
 /*
     HEADER
 */
@@ -103,6 +111,10 @@ main .section {
     padding: 40px 0;
 }
 
+#intro {
+    margin: 30px 0;
+}
+
 #intro .card {
     background-color: #B5DDFF;
     border-radius: 12px;
@@ -120,6 +132,18 @@ main .section {
     letter-spacing: 5px;
 }
 
+.my-col-1-2-tablet img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+}
+
+.my-col-1-2-tablet {
+    text-align: center;
+}
+
+
 /*
     RESPONSIVE
 */
@@ -134,17 +158,30 @@ main .section {
         width: calc(((100% / 3) * 2) - 20px);
     }
 
+    .my-row .my-col-1-2-tablet {
+        width: calc(((100% / 3) * 2) - 20px);
+    }
+
 }
 
 /* DESKTOP */
 @media screen and (min-width: 992px) {
     
+    .container {
+        width: 992px;
+    }
+
     .mobile-menu {
         display: none;
     }
 
     .desktop-menu {
         display: inline-block;
+    }
+
+    .my-row .my-col-1-2-screen {
+        width: calc((100% / 2) - 150px);
+        margin: auto;
     }
 
 }
