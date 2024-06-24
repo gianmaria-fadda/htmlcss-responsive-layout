@@ -141,8 +141,18 @@ main .section {
 
 .my-col-1-2-tablet {
     text-align: center;
+    background-color: #9792E4;
+    border-radius: 50px;
+    color: white;
 }
 
+.my-col-1-2-tablet .right-tablet > * {
+    padding: 20px 10px;
+}
+
+.my-col-1-2-tablet:first-child {
+    padding: 20px 0;
+}
 
 /*
     RESPONSIVE
@@ -159,7 +169,21 @@ main .section {
     }
 
     .my-row .my-col-1-2-tablet {
-        width: calc(((100% / 3) * 2) - 20px);
+        display: flex;
+        padding: 20px 10px;
+    }
+
+    .my-row .my-col-1-2-tablet .left-tablet{
+        width: 30%;
+    }
+
+    .my-row .my-col-1-2-tablet .right-tablet{
+        width: 70%;
+    }
+
+    .my-col-1-2-tablet .right-tablet > * {
+        text-align: left;
+        padding: 10px 10px;
     }
 
 }
@@ -184,4 +208,22 @@ main .section {
         margin: auto;
     }
 
+    .my-row .my-col-1-2-tablet {
+        display: flex;
+        padding: 20px 10px;
+    }
+
+    .my-row .my-col-1-2-tablet .left-tablet{
+        width: 30%;
+    }
+
+    .my-row .my-col-1-2-tablet .right-tablet{
+        width: 70%;
+    }
+
+    .my-col-1-2-tablet .right-tablet > * {
+        text-align: left;
+        padding: 10px 10px;
+    }
+    
 }
