@@ -343,8 +343,13 @@ main .section {
         margin: auto;
     }
 
-    .my-row .last .card > * {
+    .my-row .last {
+        width: 30%;
+        margin-top: 150px;
+    }
 
+    .my-row .last .card > * {
+        padding: 10px 20px;
     }
 
     .my-row .my-col-2-3-tablet {
