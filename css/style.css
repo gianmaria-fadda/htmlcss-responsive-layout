@@ -236,6 +236,10 @@ main .section {
     text-align: center;
 }
 
+/*
+    FOOTER
+*/
+
 .footer-top {
     text-align: center;
 }
@@ -345,7 +349,6 @@ main .section {
 
     .my-row .my-col-2-3-tablet {
         width: (100% / 3);
-        padding: 10px 0;
     }
 
 
