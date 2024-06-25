@@ -140,6 +140,62 @@ main .section {
     letter-spacing: 5px;
 }
 
+.my-col-1-3 .card .fa-solid {
+    font-size: 5cap;
+}
+
+.my-col-1-3 .card {
+    text-align: center;
+}
+
+.my-col-1-3 .card > * {
+    padding: 20px 0;
+}
+
+.my-col-1-3 .card > *:not(p) {
+    color: #0084FD;
+}
+
+.my-row .my-col-1-3 .card  {
+    height: 100%;
+}
+
+.my-row .first .card > * {
+    color: white;
+    padding: 30px 20px;
+}
+
+.my-row .last .card > * {
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.my-row .last {
+    background-color: white;
+    border-radius: 50px;
+    margin: 0 30px;
+}
+
+.my-row .last .card div > * {
+    width: 50px;
+    height: 50px;
+    padding-top: 17px;
+    border-radius: 50%;
+    background-color: #9792E4;
+    text-align: center;
+}
+
+.testimonial > div,
+.testimonial h2,
+.testimonial p {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.testimonial h2 {
+    color: #9792E4;
+}
+
 .my-col-1-2-tablet img {
     width: 150px;
     height: 150px;
@@ -161,6 +217,8 @@ main .section {
 .my-col-1-2-tablet:first-child {
     padding: 20px 0;
 }
+
+
 
 .background-row-white {
     background-color: white;
@@ -276,17 +334,20 @@ main .section {
         display: inline-block;
     }
 
+    .my-row .my-col-1-2-screen {
+        width: calc((100% / 2) - 150px);
+        margin: auto;
+    }
+
+    .my-row .last .card > * {
+
+    }
+
     .my-row .my-col-2-3-tablet {
         width: (100% / 3);
         padding: 10px 0;
     }
 
-    
-
-    .my-row .my-col-1-2-screen {
-        width: calc((100% / 2) - 150px);
-        margin: auto;
-    }
 
     .my-row .my-col-1-2-tablet {
         display: flex;
