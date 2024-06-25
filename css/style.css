@@ -40,7 +40,7 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 .background-section-purple {
@@ -49,6 +49,14 @@ img {
 
 section {
     padding: 30px 0;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.background-color-black {
+    background-color: #333333;
 }
 
 /*
@@ -154,6 +162,61 @@ main .section {
     padding: 20px 0;
 }
 
+.background-row-white {
+    background-color: white;
+    border-radius: 50px;
+}
+
+.white-button {
+    display: inline-block;
+    text-decoration: none;
+    width: 100px;
+    padding: 10px 0;
+    border-radius: 100px;
+    background-color: white;
+    color: #9792E4;
+    text-align: center;
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-top .my-col > * {
+    padding: 20px 0;
+}
+
+.footer-top .my-col > *:not(h1, .white-button){
+    color: white;
+}
+
+.footer-top .my-col h1{
+    font-size: 4.5cap;
+    color: #FDC15F;
+}
+
+.footer-top .white-button {
+    width: 200px;
+}
+
+.copyright > *{
+    font-size: 1.15cap;
+}
+
+.copyright .fa-circle {
+    font-size: .1cap;
+}
+
+.background-color-black .my-col > * {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.background-color-black .my-col .underline {
+    color: #9792E4;
+}
+
 /*
     RESPONSIVE
 */
@@ -166,6 +229,16 @@ main .section {
     
     .my-row .my-col-2-3 {
         width: calc(((100% / 3) * 2) - 20px);
+    }
+
+    .my-row .my-col-2-3-tablet .card > *:not(p) {
+        width: 50%;
+        padding: 10px 0;
+    }
+
+    .my-row .my-col-2-3-tablet .card .a-button-blue {
+        width: 90%;
+        font-size: smaller;
     }
 
     .my-row .my-col-1-2-tablet {
@@ -202,6 +275,13 @@ main .section {
     .desktop-menu {
         display: inline-block;
     }
+
+    .my-row .my-col-2-3-tablet {
+        width: (100% / 3);
+        padding: 10px 0;
+    }
+
+    
 
     .my-row .my-col-1-2-screen {
         width: calc((100% / 2) - 150px);
