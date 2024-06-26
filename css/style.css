@@ -131,7 +131,11 @@ main .section {
 #intro .card {
     background-color: #B5DDFF;
     border-radius: 12px;
-    padding: 10px;
+    padding: 0 10px;
+}
+
+#intro .card div > *:not(a, img){
+    padding: 10px 0;
 }
 
 .my-col-2-3 a {
